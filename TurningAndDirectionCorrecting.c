@@ -70,7 +70,7 @@ void leftTurn(){
 	a = SensorValue[gyro];
 
 	//crude motor control
-			//This quickly turns the robot until the gyro sensor reports a value between -80 abd -89 degrees as we cant stop it perfectly at 90.
+			//This quickly turns the robot until the gyro sensor reports a value between -80 and -89 degrees as we cant stop it perfectly at 90.
 			//The different numbers betweent he right and left motors are due to the actual robot having a wheel that doesnt rotate as fast.
 	motor[rightMotor] = 103;
 	motor[leftMotor] = -104;
@@ -92,7 +92,7 @@ void rightTurn(){
 	a = SensorValue[gyro]; //gyro -1921
 
 	//crude motor control
-			//This quickly turns the robot until the gyro sensor reports a value between -80 abd -89 degrees as we cant stop it perfectly at 90.
+			//This quickly turns the robot until the gyro sensor reports a value between -80 and -89 degrees as we cant stop it perfectly at 90.
 			//The different numbers betweent he right and left motors are due to the actual robot having a wheel that doesnt rotate as fast.
 	motor[rightMotor] = -124;
 	motor[leftMotor] = 127;				//-1121													-1024
