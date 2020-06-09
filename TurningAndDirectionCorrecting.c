@@ -61,6 +61,9 @@ void adjustCourse(){
 		motor[leftMotor] = 126;
 		wait10Msec(2);
 	}
+	
+	//add an else to check if gyro >a with motors speeds swapped if i need to check this again in the future.
+	//this would then stop drifting to the right as well.
 
 }
 
