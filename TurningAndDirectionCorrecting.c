@@ -23,7 +23,7 @@ task main(){
 	bool run = true;
 	int turns = 0;
 	while (run){
-		adjustCourse(); // this keeps the left wheel from making the whole swerveBot drifting left
+		adjustCourse(); // this keeps the left wheel from making the whole swerveBot drift left
 
 		motor[rightMotor] = 124;// the main controller for driving forwards
 		motor[leftMotor] = 124;
