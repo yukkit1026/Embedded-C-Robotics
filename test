@@ -1,19 +1,28 @@
-				if(SensorValue[rightLineFollower]>2000 || SensorValue[leftLineFollower]>1300 ){ //&& SensorValue[rightLineFollower]<200
-					if(SensorValue[rightLineFollower]>2000){
-						motor[rightMotor] = -125;// big right turn
-						motor[leftMotor] = 125;
-						wait10Msec(20);
-					} else{
-						motor[rightMotor] = 55;// left turn
-						motor[leftMotor] = 20;
-					}
-				} else if(SensorValue[leftLineFollower]>2000||SensorValue[rightLineFollower]>1300 ){ //&& SensorValue[leftLineFollower]<200
-						if(SensorValue[leftLineFollower]>2000){
-							motor[rightMotor] = 125;// big left turn
-							motor[leftMotor] = -125;
-							wait10Msec(20);
-						}else{
-							motor[rightMotor] = 20;// right turn
-							motor[leftMotor] = 55;
-						}
-				}
+	if(SensorValue[SensorValue[leftLineFollower]>2000){
+		if(SensorValue[leftLineFollower]>1300 ){
+			motor[rightMotor] = 55;// left turn
+			motor[leftMotor] = 20;
+			}
+		else{
+			motor[rightMotor] = 125;// big left turn
+			motor[leftMotor] = -125;
+			wait10Msec(20);
+			}
+		}	
+	
+	else{	
+		if(SensorValue[rightLineFollower]>1300){	
+			motor[rightMotor] = 20;// right turn
+			motor[leftMotor] = 55;
+			}
+		}
+		else if(SensorValue[rightLineFollower]>2000){
+			motor[rightMotor] = -125;// big right turn
+			motor[leftMotor] = 125;
+			wait10Msec(20);
+			}
+		}
+	
+
+
+	
